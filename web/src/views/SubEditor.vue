@@ -62,9 +62,6 @@
       </v-form>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn icon @click="save">
-          <v-icon>save_alt</v-icon>
-        </v-btn>
         <v-dialog max-width="400px" v-model="showShareDialog">
           <template #activator="{on}">
             <v-btn icon v-on="on">
