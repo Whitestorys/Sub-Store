@@ -101,6 +101,10 @@
     </v-card>
     <v-card class="mb-4">
       <v-subheader>常用选项</v-subheader>
+      <v-subheader>常用选项</v-subheader>
+      <v-btn icon @click="save" class="auto" style="position:fixed;z-index:999;">
+          <svg t="1615052612157" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="77270" width="30" height="30"><path d="M512 1024a512 512 0 1 1 512-512 512 512 0 0 1-512 512z m97.28-725.845333a28.444444 28.444444 0 0 0-28.444444-28.444445h-137.671112a28.444444 28.444444 0 0 0-28.444444 28.444445v240.355555h-145.066667L512 780.970667l242.346667-242.460445h-145.066667v-240.355555z" fill="#949494" p-id="77271"></path></svg>
+        </v-btn>
       <v-form class="pl-4 pr-4">
         <v-item-group>
           <v-radio-group
@@ -220,7 +224,68 @@
     </v-card>
   </v-container>
 </template>
-
+<style type="text/css">
+@media(device-width:390px) and (device-height:844px) and (-webkit-device-pixel-ratio:3){
+.auto{
+         right:2.5%!important;bottom:6.2%!important;
+   }
+}
+@media(device-width:414px) and (device-height:896px) and (-webkit-device-pixel-ratio:3){
+.auto{
+         right:2.5%!important;bottom:5.9%!important;
+   }
+} 
+@media(device-width:414px) and (device-height:736px) and (-webkit-device-pixel-ratio:3){
+.auto{
+         right:2.5%!important;bottom:6.9%!important;
+   }
+}
+@media(device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3){
+.auto{
+         right:2.5%!important;bottom:6.4%!important;
+   }
+}   
+@media(device-width:375px) and (device-height:667px) and (-webkit-device-pixel-ratio:2){
+.auto{
+         right:2.5%!important;bottom:7.8%!important;
+   }
+} 
+@media(device-width:411px) and (device-height:731px){
+.auto{
+         right:2.5%!important;bottom:7.0%!important;
+   }
+} 
+@media(device-width:411px) and (device-height:823px){
+.auto{
+         right:2.5%!important;bottom:6.4%!important;
+   }
+} 
+@media(device-width:768px) and (device-height:1024px){
+.auto{
+         right:2.5%!important;bottom:5.2%!important;
+   }
+} 
+@media(min-width:551px){
+.auto{
+         right:2.5%;bottom:8.4%;
+   }
+} 
+@media(max-width:550px){
+.auto{
+         right:2.5%;bottom:7.8%;
+   }
+}  
+@media(max-width:424px){
+.auto{
+         right:2.5%;bottom:7.4%;
+   }
+}  
+@media(max-width:350px){
+.auto{
+         right:2.5%;bottom:9.2%;
+   }
+}    
+</style>
 <script>
 import {showError, showInfo} from "@/utils";
 import TypeFilter from "@/components/TypeFilter";
